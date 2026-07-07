@@ -1,4 +1,4 @@
-.illus-page { min-height: 100vh; display: flex; flex-direction: column; }
+﻿.illus-page { min-height: 100vh; display: flex; flex-direction: column; }
 
 .illus-hero {
   text-align: center; padding: 64px 5vw 48px;
@@ -6,15 +6,15 @@
 .illus-hero-badge {
   display: inline-block; font-size: 0.75rem; font-weight: 700;
   letter-spacing: 0.1em; text-transform: uppercase;
-  color: #9B59B6; background: #F0E6FA;
+  color: #27AE60; background: #EAF7EE;
   padding: 6px 16px; border-radius: 20px; margin-bottom: 20px;
 }
 .illus-hero h1 {
   font-family: 'Playfair Display', serif;
-  font-size: clamp(2rem, 5vw, 3rem); color: #2D1A3E; margin: 0 0 16px; line-height: 1.2;
+  font-size: clamp(2rem, 5vw, 3rem); color: #1A2E20; margin: 0 0 16px; line-height: 1.2;
 }
-.illus-hero h1 em { color: #9B59B6; }
-.illus-hero p { font-size: 1.05rem; color: #8B6FA8; max-width: 520px; margin: 0 auto; line-height: 1.6; }
+.illus-hero h1 em { color: #27AE60; }
+.illus-hero p { font-size: 1.05rem; color: #5A8868; max-width: 520px; margin: 0 auto; line-height: 1.6; }
 
 .illus-grid-section {
   max-width: 860px; margin: 0 auto; width: 100%;
@@ -23,12 +23,12 @@
 }
 
 .illus-card {
-  background: white; border: 2px solid #E8D5F5;
+  background: white; border: 2px solid #C8E6D5;
   border-radius: 20px; overflow: hidden;
   transition: border-color 0.2s, box-shadow 0.2s;
 }
 .illus-card.expanded {
-  border-color: #9B59B6;
+  border-color: #27AE60;
   box-shadow: 0 8px 24px rgba(155,89,182,0.12);
 }
 
@@ -45,23 +45,23 @@
 }
 
 .illus-card-info { flex: 1; }
-.illus-card-info h2 { font-family: 'Playfair Display', serif; font-size: 1.2rem; color: #2D1A3E; margin: 0 0 4px; }
-.illus-city { font-size: 0.85rem; color: #8B6FA8; margin: 0 0 8px; }
+.illus-card-info h2 { font-family: 'Playfair Display', serif; font-size: 1.2rem; color: #1A2E20; margin: 0 0 4px; }
+.illus-city { font-size: 0.85rem; color: #5A8868; margin: 0 0 8px; }
 .illus-pill {
   display: inline-block; font-size: 0.72rem; font-weight: 700;
   padding: 3px 12px; border-radius: 20px; color: #5A3E2B;
 }
-.illus-chevron { font-size: 0.8rem; color: #C4A8D8; }
+.illus-chevron { font-size: 0.8rem; color: #8FBFA0; }
 
 .illus-card-body {
-  padding: 0 24px 24px; border-top: 1px solid #F0E6FA;
+  padding: 0 24px 24px; border-top: 1px solid #EAF7EE;
 }
-.illus-card-body p { font-size: 0.95rem; color: #5A3E6B; line-height: 1.6; margin: 16px 0; }
+.illus-card-body p { font-size: 0.95rem; color: #2A5A3C; line-height: 1.6; margin: 16px 0; }
 
 .illus-portfolio-placeholder {
   display: flex; align-items: center; justify-content: center; gap: 10px;
   padding: 32px; background: #FDF9FF; border-radius: 12px;
-  border: 2px dashed #E8D5F5;
-  font-size: 0.9rem; color: #C4A8D8; font-style: italic;
+  border: 2px dashed #C8E6D5;
+  font-size: 0.9rem; color: #8FBFA0; font-style: italic;
 }
 .illus-portfolio-placeholder span:first-child { font-size: 1.5rem; }

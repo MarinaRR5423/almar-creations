@@ -1,4 +1,4 @@
-/* ── Contenedor root y override del tema ────────────────────────────────────── */
+﻿/* ── Contenedor root y override del tema ────────────────────────────────────── */
 .single-product .col-full {
   max-width: 96vw !important;
 }
@@ -41,7 +41,7 @@
 
 .almar-progress-fill {
   height: 100%;
-  background: linear-gradient(90deg, #FF8C69, #FFB347);
+  background: linear-gradient(90deg, #FF7A2F, #FFA030);
   border-radius: 10px;
   transition: width 0.4s ease;
 }
@@ -76,7 +76,7 @@
 }
 
 .almar-dot.active .almar-dot-circle {
-  background: #FF8C69;
+  background: #FF7A2F;
   color: white;
   box-shadow: 0 0 0 4px rgba(255,140,105,0.25);
 }
@@ -93,7 +93,7 @@
   white-space: nowrap;
 }
 
-.almar-dot.active .almar-dot-label { color: #FF8C69; font-weight: bold; }
+.almar-dot.active .almar-dot-label { color: #FF7A2F; font-weight: bold; }
 .almar-dot.done .almar-dot-label   { color: #4CAF50; }
 
 /* ── Cuerpo ─────────────────────────────────────────────────────────────────── */
@@ -225,12 +225,12 @@
 .almar-name-tag {
   margin-top: 14px;
   background: white;
-  border: 2px solid #FFB347;
+  border: 2px solid #FFA030;
   border-radius: 20px;
   padding: 6px 18px;
   font-size: 15px;
   font-weight: bold;
-  color: #E07B39;
+  color: #D96A20;
   text-align: center;
   max-width: 180px;
   overflow: hidden;
@@ -287,7 +287,7 @@
 }
 
 .almar-name-input:focus {
-  border-color: #FF8C69;
+  border-color: #FF7A2F;
   box-shadow: 0 0 0 3px rgba(255,140,105,0.2);
 }
 
@@ -324,15 +324,15 @@
 }
 
 .almar-card:hover {
-  border-color: #FFB347;
+  border-color: #FFA030;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(255,140,105,0.2);
 }
 
 .almar-card.selected {
-  border-color: #FF8C69;
+  border-color: #FF7A2F;
   background: #FFF0E6;
-  color: #E07B39;
+  color: #D96A20;
   box-shadow: 0 0 0 3px rgba(255,140,105,0.2);
 }
 
@@ -378,7 +378,7 @@
 }
 
 .almar-swatch.selected {
-  border-color: #FF8C69;
+  border-color: #FF7A2F;
   box-shadow: 0 0 0 3px rgba(255,140,105,0.35);
   transform: scale(1.15);
 }
@@ -450,7 +450,7 @@
 }
 
 .almar-btn.next {
-  background: linear-gradient(135deg, #FF8C69, #FFB347);
+  background: linear-gradient(135deg, #FF7A2F, #FFA030);
   color: white;
   box-shadow: 0 4px 15px rgba(255,140,105,0.4);
   margin-left: auto;
@@ -508,13 +508,13 @@
 }
 
 .almar-book-card:hover {
-  border-color: #FFB347;
+  border-color: #FFA030;
   transform: translateY(-2px);
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
 
 .almar-book-card.selected {
-  border-color: #FF8C69;
+  border-color: #FF7A2F;
   box-shadow: 0 0 0 3px rgba(255,140,105,0.2);
 }
 
@@ -541,7 +541,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #FF8C69;
+  color: #FF7A2F;
 }
 
 .almar-book-info h3 {
@@ -561,7 +561,7 @@
 .almar-book-price {
   font-size: 15px;
   font-weight: 700;
-  color: #E07B39;
+  color: #D96A20;
   margin-top: 4px;
 }
 
@@ -589,13 +589,13 @@
 }
 
 .almar-illus-card:hover {
-  border-color: #FFB347;
+  border-color: #FFA030;
   transform: translateY(-2px);
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
 
 .almar-illus-card.selected {
-  border-color: #FF8C69;
+  border-color: #FF7A2F;
   box-shadow: 0 0 0 3px rgba(255,140,105,0.2);
 }
 
@@ -708,7 +708,7 @@
   margin-left: auto;
   font-size: 18px;
   font-weight: 700;
-  color: #E07B39;
+  color: #D96A20;
   white-space: nowrap;
 }
 
@@ -736,15 +736,15 @@
 }
 
 .almar-color-pill:hover {
-  border-color: #FFB347;
+  border-color: #FFA030;
   transform: translateY(-1px);
   box-shadow: 0 3px 10px rgba(0,0,0,0.08);
 }
 
 .almar-color-pill.selected {
-  border-color: #FF8C69;
+  border-color: #FF7A2F;
   background: #FFF0E6;
-  color: #E07B39;
+  color: #D96A20;
   font-weight: 600;
   box-shadow: 0 0 0 3px rgba(255,140,105,0.2);
 }
@@ -784,7 +784,7 @@
 }
 
 .almar-illus-info-btn:hover {
-  background: #FF8C69;
+  background: #FF7A2F;
   color: white;
 }
 
@@ -888,8 +888,8 @@
 }
 
 .almar-popup-link:hover {
-  border-color: #FFB347;
-  color: #E07B39;
+  border-color: #FFA030;
+  color: #D96A20;
 }
 
 .almar-popup-choose {
@@ -897,7 +897,7 @@
   padding: 10px 14px;
   border: none;
   border-radius: 12px;
-  background: linear-gradient(135deg, #FF8C69, #FFB347);
+  background: linear-gradient(135deg, #FF7A2F, #FFA030);
   color: white;
   font-size: 13px;
   font-weight: 600;
@@ -920,7 +920,7 @@
   margin-top: 18px;
   padding: 14px 20px;
   background: linear-gradient(135deg, #FFF0E6, #FFF8EE);
-  border: 2px dashed #FFB347;
+  border: 2px dashed #FFA030;
   border-radius: 14px;
   text-decoration: none;
   color: #5A3E2B;
@@ -929,7 +929,7 @@
 
 .almar-illus-cta:hover {
   background: linear-gradient(135deg, #FFE8D5, #FFF0E0);
-  border-color: #FF8C69;
+  border-color: #FF7A2F;
   transform: translateY(-1px);
   box-shadow: 0 4px 14px rgba(255,140,105,0.2);
 }
@@ -944,7 +944,7 @@
 
 .almar-illus-cta-text strong {
   font-size: 14px;
-  color: #E07B39;
+  color: #D96A20;
 }
 
 /* ── Responsive ─────────────────────────────────────────────────────────────── */

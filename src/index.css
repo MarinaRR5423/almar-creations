@@ -1,10 +1,10 @@
-*, *::before, *::after { box-sizing: border-box; }
+﻿*, *::before, *::after { box-sizing: border-box; }
 
 body {
   margin: 0;
   font-family: 'DM Sans', sans-serif;
   background: #FFF9F0;
-  color: #2D1A3E;
+  color: #1A2E20;
   -webkit-font-smoothing: antialiased;
 }
 

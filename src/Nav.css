@@ -1,20 +1,20 @@
-.main-nav {
+﻿.main-nav {
   position: sticky; top: 0; z-index: 100;
   display: flex; align-items: center;
   padding: 0 5vw; height: 68px;
   background: rgba(255,249,240,0.97);
   backdrop-filter: blur(8px);
-  border-bottom: 2px solid #E8D5F5;
+  border-bottom: 2px solid #C8E6D5;
   gap: 32px;
 }
 
 .main-nav-logo {
   font-family: 'Playfair Display', serif;
-  font-size: 1.4rem; color: #2D1A3E;
+  font-size: 1.4rem; color: #1A2E20;
   cursor: pointer; white-space: nowrap;
   flex-shrink: 0;
 }
-.main-nav-logo em { font-style: italic; color: #9B59B6; }
+.main-nav-logo em { font-style: italic; color: #27AE60; }
 
 .main-nav-links {
   display: flex; align-items: center; gap: 4px; flex: 1;
@@ -24,12 +24,12 @@
   padding: 7px 14px; border-radius: 20px;
   background: none; border: none;
   font-size: 0.9rem; font-weight: 500;
-  color: #5A3E6B; cursor: pointer;
+  color: #2A5A3C; cursor: pointer;
   transition: all 0.2s; font-family: inherit;
   white-space: nowrap;
 }
-.main-nav-link:hover  { background: #F0E6FA; color: #9B59B6; }
-.main-nav-link.active { background: #9B59B6; color: white; }
+.main-nav-link:hover  { background: #EAF7EE; color: #27AE60; }
+.main-nav-link.active { background: #27AE60; color: white; }
 
 .main-nav-right {
   display: flex; align-items: center; gap: 8px; flex-shrink: 0;
@@ -37,16 +37,16 @@
 
 .main-nav-cart {
   width: 38px; height: 38px; border-radius: 50%;
-  background: white; border: 1.5px solid #E8D5F5;
+  background: white; border: 1.5px solid #C8E6D5;
   font-size: 1rem; cursor: pointer; transition: all 0.2s;
   display: flex; align-items: center; justify-content: center;
 }
-.main-nav-cart:hover { background: #F0E6FA; border-color: #9B59B6; }
+.main-nav-cart:hover { background: #EAF7EE; border-color: #27AE60; }
 
 .main-nav-burger {
   display: none; background: none; border: none;
   font-size: 1.3rem; cursor: pointer; padding: 6px;
-  color: #5A3E6B;
+  color: #2A5A3C;
 }
 
 @media (max-width: 720px) {
@@ -55,7 +55,7 @@
   .main-nav-links {
     display: none; position: absolute; top: 68px; left: 0; right: 0;
     flex-direction: column; background: #FFF9F0;
-    border-bottom: 2px solid #E8D5F5; padding: 12px 5vw;
+    border-bottom: 2px solid #C8E6D5; padding: 12px 5vw;
     gap: 4px;
   }
   .main-nav-links.open { display: flex; }

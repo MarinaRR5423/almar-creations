@@ -1,4 +1,4 @@
-.lang-switcher {
+﻿.lang-switcher {
   display: flex;
   gap: 4px;
   align-items: center;
@@ -22,5 +22,5 @@
   display: block;
 }
 
-.lang-btn:hover { border-color: #9B59B6; }
-.lang-btn.active { border-color: #9B59B6; box-shadow: 0 0 0 2px rgba(155,89,182,0.25); }
+.lang-btn:hover { border-color: #27AE60; }
+.lang-btn.active { border-color: #27AE60; box-shadow: 0 0 0 2px rgba(155,89,182,0.25); }
