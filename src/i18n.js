@@ -1,7 +1,7 @@
 export const LANGUAGES = [
+  { code: 'fr', label: 'FR', flag: '🇫🇷' },
   { code: 'es', label: 'ES', flag: '🇪🇸' },
   { code: 'en', label: 'EN', flag: '🇬🇧' },
-  { code: 'fr', label: 'FR', flag: '🇫🇷' },
 ]
 
 export const t = {
