@@ -6,7 +6,7 @@ export const LANGUAGES = [
 
 export const t = {
   es: {
-    nav: { contact: 'Contacto', back: '← Volver a los libros' },
+    nav: { home: 'Inicio', books: 'Nuestros libros', illustrators: 'Ilustradores', about: 'Sobre nosotros', contact: 'Contacto', back: '← Volver a los libros' },
     hero: {
       badge: '📚 Libros personalizados',
       title: 'Cada niño merece',
@@ -95,7 +95,7 @@ export const t = {
   },
 
   en: {
-    nav: { contact: 'Contact', back: '← Back to books' },
+    nav: { home: 'Home', books: 'Our books', illustrators: 'Illustrators', about: 'About us', contact: 'Contact', back: '← Back to books' },
     hero: {
       badge: '📚 Personalised books',
       title: 'Every child deserves',
@@ -184,7 +184,7 @@ export const t = {
   },
 
   fr: {
-    nav: { contact: 'Contact', back: '← Retour aux livres' },
+    nav: { home: 'Accueil', books: 'Nos livres', illustrators: 'Nos illustrateurs', about: 'À propos', contact: 'Contact', back: '← Retour aux livres' },
     hero: {
       badge: '📚 Livres personnalisés',
       title: 'Chaque enfant mérite',

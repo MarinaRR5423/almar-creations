@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import { useLang } from '../LangContext.jsx'
-import LangSwitcher from '../LangSwitcher.jsx'
+import Nav from '../Nav.jsx'
+import Footer from '../Footer.jsx'
 import Wizard from '../Wizard.jsx'
 import './ProductPage.css'
 
-export default function ProductPage({ book, onBack }) {
+export default function ProductPage({ book, onBack, navigate }) {
   const { tr } = useLang()
   const [previewName, setPreviewName] = useState('')
 
@@ -15,17 +16,9 @@ export default function ProductPage({ book, onBack }) {
   return (
     <div className="product-page">
 
-      <nav className="product-nav">
-        <span className="product-logo" onClick={onBack} style={{ cursor: 'pointer' }}>Almar <em>Creations</em></span>
-        <div className="product-nav-right">
-          <LangSwitcher />
-          <button className="product-back-btn" onClick={onBack}>{tr.nav.back}</button>
-          <button className="product-cart-btn" title="Carrito (próximamente)">🛒</button>
-        </div>
-      </nav>
+      <Nav navigate={navigate} currentPage="books" />
 
       <div className="product-layout">
-
         <div className="product-main">
           <div className="product-header">
             <div className="product-info">
@@ -68,7 +61,6 @@ export default function ProductPage({ book, onBack }) {
             </div>
           </div>
         </aside>
-
       </div>
 
       <div className="product-guarantees">
@@ -78,11 +70,7 @@ export default function ProductPage({ book, onBack }) {
         <div className="product-guarantee">{tr.guarantees.love}</div>
       </div>
 
-      <footer className="product-footer">
-        <span className="product-footer-logo">Almar <em>Creations</em></span>
-        <span>© 2025 Almar Creations · {tr.footer}</span>
-      </footer>
-
+      <Footer navigate={navigate} />
     </div>
   )
 }

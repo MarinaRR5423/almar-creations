@@ -1,6 +1,7 @@
 import React from 'react'
 import { useLang } from '../LangContext.jsx'
-import LangSwitcher from '../LangSwitcher.jsx'
+import Nav from '../Nav.jsx'
+import Footer from '../Footer.jsx'
 import './HomePage.css'
 
 const BOOK_IDS = ['nacimiento', 'cumpleanos', 'emociones', 'familia']
@@ -11,38 +12,31 @@ const BOOK_META = {
   familia:    { color: '#EEEDFE', stroke: '#CECBF6', icon: '🏠' },
 }
 
-export default function HomePage({ onSelectBook }) {
+export default function HomePage({ navigate, onSelectBook }) {
   const { tr } = useLang()
 
   return (
     <div className="home">
-      <nav className="home-nav">
-        <span className="home-logo">Almar <em>Creations</em></span>
-        <div className="home-nav-right">
-          <LangSwitcher />
-          <a href="mailto:hola@almarcreations.com" className="home-contact">{tr.nav.contact}</a>
-          <button className="home-cart-btn" title="Carrito (próximamente)">🛒</button>
-        </div>
-      </nav>
+      <Nav navigate={navigate} currentPage="home" />
 
       <header className="home-hero">
         <div className="home-hero-badge">{tr.hero.badge}</div>
         <h1>{tr.hero.title}<br /><em>{tr.hero.titleEm}</em></h1>
         <p>{tr.hero.desc}</p>
+        <div className="home-hero-btns">
+          <button className="home-hero-btn primary" onClick={() => navigate('books')}>{tr.home.chooseCollection}</button>
+          <button className="home-hero-btn secondary" onClick={() => navigate('illustrators')}>{tr.nav.illustrators}</button>
+        </div>
       </header>
 
-      <section className="home-books">
+      <section className="home-books" id="books">
         <h2>{tr.home.chooseCollection}</h2>
         <div className="home-books-grid">
           {BOOK_IDS.map(id => {
             const meta = BOOK_META[id]
             const book = tr.books[id]
             return (
-              <button
-                key={id}
-                className="home-book-card"
-                onClick={() => onSelectBook({ id, ...meta, ...book })}
-              >
+              <button key={id} className="home-book-card" onClick={() => onSelectBook({ id, ...meta, ...book })}>
                 <div className="home-book-cover" style={{ background: meta.color, borderColor: meta.stroke }}>
                   <span>{meta.icon}</span>
                 </div>
@@ -68,10 +62,7 @@ export default function HomePage({ onSelectBook }) {
         <div className="home-guarantee">{tr.guarantees.love}</div>
       </section>
 
-      <footer className="home-footer">
-        <span className="home-footer-logo">Almar <em>Creations</em></span>
-        <span>© 2025 Almar Creations · {tr.footer}</span>
-      </footer>
+      <Footer navigate={navigate} />
     </div>
   )
 }
