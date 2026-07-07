@@ -1,0 +1,11 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  background: #FFF9F0;
+  color: #2D1A3E;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; }

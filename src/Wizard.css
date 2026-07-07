@@ -1,0 +1,956 @@
+/* ── Contenedor root y override del tema ────────────────────────────────────── */
+.single-product .col-full {
+  max-width: 96vw !important;
+}
+
+#almar-wizard-root {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 30px 0 0 0 !important;
+  padding: 0 !important;
+  clear: both;
+}
+
+/* ── Wizard Almar ─────────────────────────────────────────────────────────── */
+.almar-wizard {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 0 0 0;
+  background: #FFFDF7;
+  border-radius: 20px;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.10);
+  overflow: hidden;
+  border: 2px solid #F0E6D3;
+}
+
+/* ── Barra de progreso ──────────────────────────────────────────────────────── */
+.almar-progress {
+  background: #FFF8EE;
+  padding: 20px 30px 16px;
+  border-bottom: 2px solid #F0E6D3;
+}
+
+.almar-progress-bar {
+  height: 6px;
+  background: #E8D5B7;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.almar-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #FF8C69, #FFB347);
+  border-radius: 10px;
+  transition: width 0.4s ease;
+}
+
+.almar-steps-dots {
+  display: flex;
+  justify-content: space-between;
+}
+
+.almar-dot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  cursor: default;
+}
+
+.almar-dot.done { cursor: pointer; }
+
+.almar-dot-circle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #E8D5B7;
+  color: #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.almar-dot.active .almar-dot-circle {
+  background: #FF8C69;
+  color: white;
+  box-shadow: 0 0 0 4px rgba(255,140,105,0.25);
+}
+
+.almar-dot.done .almar-dot-circle {
+  background: #4CAF50;
+  color: white;
+}
+
+.almar-dot-label {
+  font-size: 10px;
+  color: #999;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.almar-dot.active .almar-dot-label { color: #FF8C69; font-weight: bold; }
+.almar-dot.done .almar-dot-label   { color: #4CAF50; }
+
+/* ── Cuerpo ─────────────────────────────────────────────────────────────────── */
+.almar-body {
+  display: flex;
+  min-height: 460px;
+}
+
+/* ── Panel preview ──────────────────────────────────────────────────────────── */
+.almar-preview-panel {
+  width: 200px;
+  min-width: 200px;
+  background: linear-gradient(160deg, #FFF0E0, #FFE4C4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+  border-right: 2px solid #F0E6D3;
+}
+
+.almar-char-wrap {
+  position: relative;
+  width: 170px;
+  height: 300px;
+  overflow: hidden;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.12));
+}
+
+.almar-char-layer {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: left top;
+  transform: scale(3.4);
+  transform-origin: 11% 8%;
+}
+
+/* ── Adultos ──────────────────────────────────────────────────────────────── */
+.almar-adults-row {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.almar-adult-customizer {
+  display: flex;
+  gap: 16px;
+  background: #FFF8EE;
+  border: 2px solid #F0E6D3;
+  border-radius: 16px;
+  padding: 16px;
+  flex: 1;
+  min-width: 260px;
+}
+
+.almar-adult-preview-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.almar-adult-label {
+  font-weight: 700;
+  font-size: 14px;
+  color: #5A3E2B;
+  text-align: center;
+}
+
+.almar-adult-wrap {
+  position: relative;
+  width: 100px;
+  aspect-ratio: 4 / 5;
+  filter: drop-shadow(0 3px 8px rgba(0,0,0,0.12));
+}
+
+.almar-adult-layer {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: top left;
+}
+
+.almar-adult-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.almar-adult-option-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.almar-adult-option-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #9B7E5A;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.almar-swatches.small {
+  gap: 6px;
+}
+
+.almar-swatches.small .almar-swatch {
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform 0.15s, border-color 0.15s;
+}
+
+.almar-swatches.small .almar-swatch.selected {
+  border-color: #5A3E2B;
+  transform: scale(1.2);
+}
+
+.almar-name-tag {
+  margin-top: 14px;
+  background: white;
+  border: 2px solid #FFB347;
+  border-radius: 20px;
+  padding: 6px 18px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #E07B39;
+  text-align: center;
+  max-width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ── Panel contenido ────────────────────────────────────────────────────────── */
+.almar-content-panel {
+  flex: 1;
+  padding: 28px 30px;
+  overflow-y: auto;
+}
+
+.almar-step h2 {
+  font-size: 20px;
+  color: #3D2B1F;
+  margin: 0 0 6px;
+}
+
+.almar-step > p {
+  color: #888;
+  font-size: 14px;
+  margin: 0 0 20px;
+}
+
+.almar-section {
+  margin-bottom: 22px;
+}
+
+.almar-section h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #7A5C44;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ── Input nombre ───────────────────────────────────────────────────────────── */
+.almar-name-input {
+  width: 100%;
+  padding: 14px 18px;
+  font-size: 22px;
+  border: 2px solid #E8D5B7;
+  border-radius: 12px;
+  background: white;
+  color: #3D2B1F;
+  outline: none;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: inherit;
+}
+
+.almar-name-input:focus {
+  border-color: #FF8C69;
+  box-shadow: 0 0 0 3px rgba(255,140,105,0.2);
+}
+
+.almar-hint {
+  text-align: right;
+  font-size: 12px;
+  color: #bbb;
+  margin-top: 6px;
+}
+
+/* ── Cards de opción ────────────────────────────────────────────────────────── */
+.almar-options-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+
+.almar-options-row.wrap { flex-wrap: wrap; }
+
+.almar-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 12px 14px;
+  background: white;
+  border: 2px solid #E8D5B7;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 13px;
+  color: #5A3E2B;
+  transition: all 0.2s;
+  min-width: 72px;
+}
+
+.almar-card:hover {
+  border-color: #FFB347;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255,140,105,0.2);
+}
+
+.almar-card.selected {
+  border-color: #FF8C69;
+  background: #FFF0E6;
+  color: #E07B39;
+  box-shadow: 0 0 0 3px rgba(255,140,105,0.2);
+}
+
+.almar-card.small {
+  padding: 8px 10px;
+  min-width: 60px;
+  font-size: 12px;
+}
+
+.almar-card-icon {
+  font-size: 26px;
+}
+
+.almar-card.small .almar-card-icon {
+  font-size: 20px;
+}
+
+.almar-card-range {
+  font-size: 11px;
+  color: #aaa;
+  font-weight: 500;
+}
+
+/* ── Swatches de color ──────────────────────────────────────────────────────── */
+.almar-swatches {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.almar-swatch {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  border: 3px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.almar-swatch:hover {
+  transform: scale(1.15);
+}
+
+.almar-swatch.selected {
+  border-color: #FF8C69;
+  box-shadow: 0 0 0 3px rgba(255,140,105,0.35);
+  transform: scale(1.15);
+}
+
+/* ── Resumen ────────────────────────────────────────────────────────────────── */
+.almar-summary {
+  background: white;
+  border: 2px solid #F0E6D3;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.almar-summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 18px;
+  border-bottom: 1px solid #F5EDE0;
+  font-size: 14px;
+}
+
+.almar-summary-row:last-child { border-bottom: none; }
+
+.almar-summary-label {
+  color: #999;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.almar-summary-value {
+  font-weight: 600;
+  color: #3D2B1F;
+  text-transform: capitalize;
+}
+
+/* ── Navegación ─────────────────────────────────────────────────────────────── */
+.almar-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 28px;
+  background: #FFF8EE;
+  border-top: 2px solid #F0E6D3;
+}
+
+.almar-btn {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.almar-btn.back {
+  background: white;
+  color: #999;
+  border: 2px solid #E8D5B7;
+}
+
+.almar-btn.back:hover {
+  background: #F5EDE0;
+  color: #7A5C44;
+}
+
+.almar-btn.next {
+  background: linear-gradient(135deg, #FF8C69, #FFB347);
+  color: white;
+  box-shadow: 0 4px 15px rgba(255,140,105,0.4);
+  margin-left: auto;
+}
+
+.almar-btn.next:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255,140,105,0.5);
+}
+
+.almar-btn.next:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.almar-btn.cart {
+  width: 100%;
+  background: linear-gradient(135deg, #4CAF50, #66BB6A);
+  color: white;
+  font-size: 17px;
+  padding: 16px;
+  box-shadow: 0 4px 15px rgba(76,175,80,0.4);
+}
+
+.almar-btn.cart:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(76,175,80,0.5);
+}
+
+/* ── Paso ancho completo (libros e ilustradores) ────────────────────────────── */
+.almar-step.wide { max-width: 100%; }
+
+/* ── Grid de libros ─────────────────────────────────────────────────────────── */
+.almar-books-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.almar-book-card {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  background: white;
+  border: 2px solid #E8D5B7;
+  border-radius: 14px;
+  padding: 14px;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.almar-book-card:hover {
+  border-color: #FFB347;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.almar-book-card.selected {
+  border-color: #FF8C69;
+  box-shadow: 0 0 0 3px rgba(255,140,105,0.2);
+}
+
+.almar-book-cover {
+  width: 60px;
+  min-width: 60px;
+  height: 76px;
+  border-radius: 8px;
+  border: 2px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
+.almar-book-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.almar-book-badge-label {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #FF8C69;
+}
+
+.almar-book-info h3 {
+  font-size: 13px;
+  color: #3D2B1F;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.almar-book-info p {
+  font-size: 11px;
+  color: #999;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.almar-book-price {
+  font-size: 15px;
+  font-weight: 700;
+  color: #E07B39;
+  margin-top: 4px;
+}
+
+/* ── Grid de ilustradores ───────────────────────────────────────────────────── */
+.almar-illus-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.almar-illus-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  background: white;
+  border: 2px solid #E8D5B7;
+  border-radius: 14px;
+  padding: 14px 10px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.almar-illus-card:hover {
+  border-color: #FFB347;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.almar-illus-card.selected {
+  border-color: #FF8C69;
+  box-shadow: 0 0 0 3px rgba(255,140,105,0.2);
+}
+
+.almar-illus-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.almar-illus-info { display: flex; flex-direction: column; align-items: center; gap: 3px; }
+.almar-illus-name { font-size: 13px; font-weight: 700; color: #3D2B1F; margin: 0; }
+.almar-illus-city { font-size: 11px; color: #aaa; margin: 0; }
+.almar-illus-desc { font-size: 10px; color: #999; margin: 2px 0 0; line-height: 1.3; }
+
+.almar-style-pill {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 20px;
+  color: #5A3E2B;
+  margin-top: 2px;
+}
+
+/* ── Badges del panel preview ───────────────────────────────────────────────── */
+.almar-book-badge {
+  margin-top: 10px;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+  border: 2px solid;
+  background: white;
+  color: #5A3E2B;
+}
+
+.almar-illus-badge {
+  margin-top: 6px;
+  font-size: 11px;
+  color: #5A3E2B;
+  background: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  border: 1px solid #E8D5B7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.almar-illus-badge-style {
+  font-size: 10px;
+  font-weight: 400;
+  color: #aaa;
+}
+
+/* ── Cabecera ilustrador en preview final ───────────────────────────────────── */
+.almar-preview-illus-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #E8D5B7;
+}
+
+.almar-preview-illus-header strong {
+  display: block;
+  font-size: 14px;
+  color: #3D2B1F;
+}
+
+.almar-preview-illus-style {
+  display: block;
+  font-size: 11px;
+  color: #999;
+  margin-top: 2px;
+}
+
+/* ── Preview cabecera del libro ─────────────────────────────────────────────── */
+.almar-preview-book-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 2px solid;
+  margin-bottom: 16px;
+}
+
+.almar-preview-book-header strong {
+  display: block;
+  font-size: 14px;
+  color: #3D2B1F;
+}
+
+.almar-preview-illus {
+  display: block;
+  font-size: 11px;
+  color: #999;
+  margin-top: 2px;
+}
+
+.almar-preview-price {
+  margin-left: auto;
+  font-size: 18px;
+  font-weight: 700;
+  color: #E07B39;
+  white-space: nowrap;
+}
+
+/* ── Píldoras de color ──────────────────────────────────────────────────────── */
+.almar-color-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.almar-color-pill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 14px 7px 8px;
+  background: white;
+  border: 2px solid #E8D5B7;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  color: #5A3E2B;
+  font-family: inherit;
+  transition: all 0.2s;
+}
+
+.almar-color-pill:hover {
+  border-color: #FFB347;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.almar-color-pill.selected {
+  border-color: #FF8C69;
+  background: #FFF0E6;
+  color: #E07B39;
+  font-weight: 600;
+  box-shadow: 0 0 0 3px rgba(255,140,105,0.2);
+}
+
+.almar-color-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.15);
+}
+
+/* ── Botón info en tarjeta ilustrador ───────────────────────────────────────── */
+.almar-illus-card {
+  position: relative;
+}
+
+.almar-illus-info-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #E8D5B7;
+  color: #7A5C44;
+  font-size: 11px;
+  font-weight: 700;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  font-family: Georgia, serif;
+  line-height: 1;
+}
+
+.almar-illus-info-btn:hover {
+  background: #FF8C69;
+  color: white;
+}
+
+/* ── Popup ilustrador ───────────────────────────────────────────────────────── */
+.almar-popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.almar-popup {
+  background: #FFFDF7;
+  border-radius: 20px;
+  padding: 32px 28px 24px;
+  max-width: 340px;
+  width: 100%;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  text-align: center;
+  border: 2px solid #F0E6D3;
+}
+
+.almar-popup-close {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #bbb;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 6px;
+  line-height: 1;
+  transition: color 0.2s, background 0.2s;
+}
+
+.almar-popup-close:hover {
+  color: #5A3E2B;
+  background: #F0E6D3;
+}
+
+.almar-popup-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4px;
+}
+
+.almar-popup-title {
+  font-size: 20px;
+  color: #3D2B1F;
+  margin: 0;
+  font-weight: 700;
+}
+
+.almar-popup-city {
+  font-size: 13px;
+  color: #aaa;
+  margin: 0;
+}
+
+.almar-popup-desc {
+  font-size: 13px;
+  color: #7A5C44;
+  line-height: 1.55;
+  margin: 6px 0 0;
+}
+
+.almar-popup-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.almar-popup-link {
+  flex: 1;
+  padding: 10px 14px;
+  border: 2px solid #E8D5B7;
+  border-radius: 12px;
+  background: white;
+  color: #7A5C44;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.almar-popup-link:hover {
+  border-color: #FFB347;
+  color: #E07B39;
+}
+
+.almar-popup-choose {
+  flex: 1;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #FF8C69, #FFB347);
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s;
+  box-shadow: 0 3px 10px rgba(255,140,105,0.35);
+}
+
+.almar-popup-choose:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 15px rgba(255,140,105,0.45);
+}
+
+/* ── CTA ilustradores ───────────────────────────────────────────────────────── */
+.almar-illus-cta {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 18px;
+  padding: 14px 20px;
+  background: linear-gradient(135deg, #FFF0E6, #FFF8EE);
+  border: 2px dashed #FFB347;
+  border-radius: 14px;
+  text-decoration: none;
+  color: #5A3E2B;
+  transition: all 0.2s;
+}
+
+.almar-illus-cta:hover {
+  background: linear-gradient(135deg, #FFE8D5, #FFF0E0);
+  border-color: #FF8C69;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(255,140,105,0.2);
+}
+
+.almar-illus-cta-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 13px;
+  color: #7A5C44;
+}
+
+.almar-illus-cta-text strong {
+  font-size: 14px;
+  color: #E07B39;
+}
+
+/* ── Responsive ─────────────────────────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .almar-preview-panel { display: none; }
+  .almar-dot-label     { display: none; }
+  .almar-options-row   { flex-wrap: wrap; }
+  .almar-content-panel { padding: 20px 16px; }
+}
