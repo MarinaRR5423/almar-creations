@@ -10,7 +10,10 @@ export default function ProductPage({ book, onBack }) {
 
       <nav className="product-nav">
         <span className="product-logo">Almar <em>Creations</em></span>
-        <button className="product-back-btn" onClick={onBack}>← Volver a los libros</button>
+        <div className="product-nav-right">
+          <button className="product-back-btn" onClick={onBack}>← Volver a los libros</button>
+          <button className="product-cart-btn" title="Carrito (próximamente)">🛒</button>
+        </div>
       </nav>
 
       <div className="product-layout">

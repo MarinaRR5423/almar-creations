@@ -26,6 +26,14 @@
   border: 1.5px solid #E8D5F5; transition: all 0.2s; font-family: inherit;
 }
 .product-back-btn:hover { background: #F0E6FA; border-color: #9B59B6; }
+.product-nav-right { display: flex; align-items: center; gap: 10px; }
+.product-cart-btn {
+  width: 40px; height: 40px; border-radius: 50%;
+  background: white; border: 1.5px solid #E8D5F5;
+  font-size: 1.1rem; cursor: pointer; transition: all 0.2s;
+  display: flex; align-items: center; justify-content: center;
+}
+.product-cart-btn:hover { background: #F0E6FA; border-color: #9B59B6; }
 
 /* Layout dos columnas */
 .product-layout {

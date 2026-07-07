@@ -49,7 +49,12 @@ export default function HomePage({ onSelectBook }) {
     <div className="home">
       <nav className="home-nav">
         <span className="home-logo">Almar <em>Creations</em></span>
-        <a href="mailto:hola@almarcreations.com" className="home-contact">Contacto</a>
+        <div className="home-nav-right">
+          <a href="mailto:hola@almarcreations.com" className="home-contact">Contacto</a>
+          <button className="home-cart-btn" title="Carrito (próximamente)">
+            🛒
+          </button>
+        </div>
       </nav>
 
       <header className="home-hero">
