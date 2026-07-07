@@ -16,7 +16,7 @@ export default function ProductPage({ book, onBack }) {
     <div className="product-page">
 
       <nav className="product-nav">
-        <span className="product-logo">Almar <em>Creations</em></span>
+        <span className="product-logo" onClick={onBack} style={{ cursor: 'pointer' }}>Almar <em>Creations</em></span>
         <div className="product-nav-right">
           <LangSwitcher />
           <button className="product-back-btn" onClick={onBack}>{tr.nav.back}</button>
