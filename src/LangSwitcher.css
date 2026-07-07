@@ -5,25 +5,22 @@
 }
 
 .lang-btn {
-  padding: 4px 6px;
-  border-radius: 20px;
-  border: 1.5px solid #E8D5F5;
+  width: 34px; height: 34px;
+  border-radius: 50%;
+  border: 2px solid transparent;
   background: white;
-  font-size: 0.78rem;
-  font-weight: 600;
-  color: #8B6FA8;
   cursor: pointer;
   transition: all 0.2s;
-  font-family: inherit;
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
+  padding: 0;
 }
 
-.lang-btn:hover {
-  background: #F0E6FA;
-  border-color: #9B59B6;
+.lang-btn .fi {
+  width: 22px; height: 16px;
+  border-radius: 2px;
+  display: block;
 }
 
-.lang-btn.active {
-  background: #9B59B6;
-  border-color: #9B59B6;
-  color: white;
-}
+.lang-btn:hover { border-color: #9B59B6; }
+.lang-btn.active { border-color: #9B59B6; box-shadow: 0 0 0 2px rgba(155,89,182,0.25); }
