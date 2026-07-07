@@ -12,7 +12,7 @@ export default function LangSwitcher() {
           className={`lang-btn ${lang === l.code ? 'active' : ''}`}
           onClick={() => setLang(l.code)}
         >
-          {l.flag} {l.label}
+          {l.flag}
         </button>
       ))}
     </div>
