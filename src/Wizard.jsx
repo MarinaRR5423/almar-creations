@@ -30,8 +30,8 @@ const ADULT_HAIR_COLORS = { rubio:'#D4B483', naranja:'#C0652B', castano:'#6B3A2A
 const ADULT_F_OUTFIT_IDS = ['naranja','amarillo','azul','verde','rojo','morado','rosa']
 const ADULT_M_OUTFIT_IDS = ['amarillo','rojo','verde','morado','malva']
 const ADULT_OUTFIT_COLORS = { naranja:'#E8894A', amarillo:'#F5D77E', azul:'#7EC8E3', verde:'#A8C96B', rojo:'#C0392B', morado:'#9B59B6', rosa:'#D4859A', malva:'#D4859A' }
-const ADULT_EYE_IDS     = ['marron','verde']
-const ADULT_EYE_COLORS  = { marron:'#6B3A2A', verde:'#4CAF50' }
+const ADULT_EYE_IDS     = ['marron']
+const ADULT_EYE_COLORS  = { marron:'#6B3A2A' }
 
 const STEP_IDS = ['ilustrador','nombre','genero','aspecto','complementos','familia','preview']
 const STEP_ICONS = { ilustrador:'🎨', nombre:'✏️', genero:'👦', aspecto:'✨', complementos:'🎒', familia:'👨‍👩‍👧', preview:'🎉' }
@@ -61,7 +61,7 @@ const defaultCharacter = {
   illustrator:'', name:'', gender:'nina', age:'nino',
   skinTone:'claro', hairColor:'castano', outfitColor:'rosa', eyeColor:'marron',
   accessories:[], family:'mama_papa', pet:'ninguno',
-  adult1:{ skinTone:'claro', hairColor:'marron', outfitColor:'naranja', eyeColor:'marron' },
+  adult1:{ skinTone:'claro', hairColor:'marron', outfitColor:'amarillo', eyeColor:'marron' },
   adult2:{ skinTone:'claro', hairColor:'marron', outfitColor:'amarillo', eyeColor:'marron' },
 }
 
